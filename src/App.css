@@ -1,0 +1,89 @@
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(253, 230, 198, 0.541);
+  width: 30%;
+  margin: 0 auto;
+  height: 25rem;
+  padding: 10px;
+  font-weight: 600;
+  padding: 25px;
+  border-radius: 10px 10px;
+  justify-content: center;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+input{
+  margin-bottom: 11px;
+  font-family: "Quicksand";
+  font-weight: 450;
+  font-size: 15px;
+  width: 100%;
+}
+.registerBtn{
+  width: 50%;
+  height: 35px;
+  font-weight: 600;
+  font-family: "Quicksand";
+  color: white;
+  background-color: rgb(43, 43, 101);
+  font-size: 15px;
+  border: 0 solid white;
+  border-radius: 5px 5px;
+  margin-bottom: 5px;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(253, 230, 198, 0.541);
+  width: 30%;
+  margin: 0 auto;
+  height: 15rem;
+  padding: 10px;
+  font-weight: 600;
+  border-radius: 10px 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+p{
+  margin-bottom: 2px;
+}
+.navBar{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+.centerBtn{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+ul{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: rgb(15, 65, 99);
+  font-weight: bolder;
+}
+.homepage{
+  display: block;
+  background-color: rgba(253, 230, 198, 0.541);
+  width: 40%;
+  height: 50px;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 7px 7px;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+}
+.homepage h1{
+  text-align: center;
+  margin-top: 210px;
+  align-items: center;
+  color: rgb(27, 52, 99);
+}
