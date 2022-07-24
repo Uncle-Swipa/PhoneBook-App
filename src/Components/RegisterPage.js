@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import { useForm } from "react-hook-form";
 import { useState } from "react";
 import axios from "axios";
 
@@ -10,7 +9,6 @@ const RegisterPage = () => {
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const navigate = useNavigate();
-  const { register, getValues, watch } = useForm();
 
   const baseURL = "http://localhost:8080/register";
 
@@ -30,8 +28,7 @@ const RegisterPage = () => {
 
   const navigateToLogin = () => {
     navigate('/login');
-  }
-
+  };
 
   return (
     <div>
@@ -72,7 +69,6 @@ const RegisterPage = () => {
             <input
               name="passcode"
               type="password"
-              {...register("passcode", { required: true })}
               placeholder="Password"
               value={password}
               onChange={(e) => setPassword(e.target.value)}
@@ -83,19 +79,13 @@ const RegisterPage = () => {
             <input
               name="passcode_repeat"
               type="password"
-              {...register("passcode_repeat", { required: true })}
               placeholder="Confirm Password"
               value={confirmPassword}
               onChange={(e) => setConfirmPassword(e.target.value)}
             />
           </label>
-          {watch("passcode_repeat") !== watch("passcode") &&
-          getValues("passcode_repeat") ? (
-            <p>Password does not match</p>
-          ) : null}
-          <br />
           <div className="centerBtn">
-            <button className="registerBtn" onClick={postUserDetails}>
+            <button className="Btn" onClick={postUserDetails}>
               Register
             </button>
           </div>

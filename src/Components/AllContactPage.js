@@ -29,13 +29,16 @@ const AllContacts = () => {
               <div className="contact-card" key={contact.id}>
                 <h4>{contact.name}</h4>
                 <p>{contact.email}</p>
-                <img
-                  src="\icons8-trash.svg"
-                  alt="delete icon"
-                  width="20"
-                  height="15"
-                  onClick={() => deleteContact(contact.id)}
-                />
+                <div className="delete">
+                  <img
+                    src="\icons8-trash.svg"
+                    alt="delete icon"
+                    width="20"
+                    height="15"
+                    onClick={() => deleteContact(contact.id)}
+                  />
+                </div>
+                <br />
                 <Link to={`/single-page/${contact.id}`}>View Details</Link>
               </div>
             );
