@@ -2,7 +2,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 
-const RegisterPage = () => {
+  const RegisterPage = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
@@ -20,7 +20,7 @@ const RegisterPage = () => {
     formField.append('phoneNumber', phoneNumber)
     formField.append('password', password)
     formField.append('confirmPassword', confirmPassword)
-
+//This connects to the backend and the values provided on submitting the register form is updated on the database
     axios.post(baseURL, formField, {headers: {"Content-Type": "application/json"}}).then((response) => {
       console.table(response.data);
     })
@@ -29,7 +29,7 @@ const RegisterPage = () => {
   const navigateToLogin = () => {
     navigate('/login');
   };
-
+//This is the register form written in JSX and after a succesful submit it navigates to the Login page
   return (
     <div>
       <div className="register">
